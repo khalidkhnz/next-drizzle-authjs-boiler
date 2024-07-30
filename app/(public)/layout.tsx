@@ -1,11 +1,11 @@
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 
-export default async function Page() {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div>
       <Header />
-      <section>HOMEPAGE</section>
+      <main className="p-6 bg-white dark:bg-black">{children}</main >
       <Footer />
     </div>
   );
